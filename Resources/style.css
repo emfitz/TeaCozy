@@ -10,6 +10,10 @@ html{
 header{
   height: 69px;
   border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
 
 }
 .header{
@@ -32,7 +36,7 @@ header{
   flex: 1;
 
 }
-span{
+.nav span{
   margin-left: 15px;
 }
 a{
@@ -40,10 +44,18 @@ a{
   text-decoration: underline;
 }
 
+/* Main Body of Page*/
+.main{
+margin: auto;
+padding-top: 69px;
+width: 1200px;
+}
+
 /*Mission Section*/
 .mission{
   background-image:url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   height: 700px;
+  width: 1200px;
   display: flex;
   align-items: center;
 }
@@ -53,4 +65,34 @@ a{
   text-align: center;
   vertical-align: middle;
   line-height: 20px;
+}
+/* Tea of the Month Section*/
+.month{
+  width: 1000px;
+  height: 700px;
+  text-align: center;
+  padding-top: 75px;
+  margin: auto;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.item{
+  padding: 5px;
+
+}
+.container img{
+  height: 200px;
+  margin: 10px;
+
+}
+.item span{
+  text-align: center;
+  padding: 5px;
+  display: block;
+
 }
